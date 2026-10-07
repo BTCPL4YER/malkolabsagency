@@ -1,0 +1,2 @@
+﻿license: Ubuntu Font License 1.0
+link: https://www.fontspace.com/ubuntu-condensed-font-f16156
