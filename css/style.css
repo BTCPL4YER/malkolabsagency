@@ -114,8 +114,41 @@ nav {
 .navbar:focus-within {
     background-color: var(--midnight-slate);
     width: 185px;
-    height: 390px;
+    height: 450px;
     box-shadow: 0 8px 24px rgba(35, 39, 55, 0.22);
+}
+
+.navbar .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 0 10px 10px;
+    color: var(--lavender-mist);
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.navbar .language-button {
+    border: 0;
+    padding: 5px 4px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    opacity: 0.72;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar .language-button[aria-pressed="true"],
+.navbar .language-button:hover,
+.navbar .language-button:focus-visible {
+    color: var(--soft-lilac);
+    opacity: 1;
+}
+
+.navbar .language-button:focus-visible {
+    outline: 2px solid var(--soft-lilac);
+    outline-offset: 2px;
 }
 
 .navbar .logo {

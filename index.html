@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style  -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon_io/favicon-32x32.png">
@@ -17,22 +15,27 @@
 </head>
     <body>
         <header class="header">
-            <img src="assets/images/logos/Malko Labs text.png" class="animatelogo" alt="Logo" width="200">
+            <img src="assets/images/logos/Malko Labs text.png" class="animatelogo" alt="Malko Labs" width="200">
             <nav class="navbar">
 
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logos/Malko Labs 291x291px black(M).png" alt="Home" class="nav-logo" width="50" width="60">
+                    <img src="assets/images/logos/Malko Labs 291x291px black(M).png" alt="Home" class="nav-logo" width="50" width="60" data-i18n-alt="nav.home">
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="#services" aria-label="Services"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-                        <span>Services</span></a></li>
-                    <li><a href="#work" aria-label="Work"><i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-                        <span>Work</span></a></li>
-                    <li><a href="#about" aria-label="Team"><i class="fa-solid fa-info-circle" aria-hidden="true"></i>
-                        <span>Team</span></a></li>
-                    <li><a href="#contact" aria-label="Contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                        <span>Contact</span></a></li>
+                    <li><a href="#services" aria-label="Services" data-i18n-aria-label="nav.services"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                        <span data-i18n="nav.services">Services</span></a></li>
+                    <li><a href="#work" aria-label="Work" data-i18n-aria-label="nav.work"><i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                        <span data-i18n="nav.work">Work</span></a></li>
+                    <li><a href="#about" aria-label="Team" data-i18n-aria-label="nav.team"><i class="fa-solid fa-info-circle" aria-hidden="true"></i>
+                        <span data-i18n="nav.team">Team</span></a></li>
+                    <li><a href="#contact" aria-label="Contact" data-i18n-aria-label="nav.contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span data-i18n="nav.contact">Contact</span></a></li>
+                    <li class="language-switcher" aria-label="Choose language" data-i18n-aria-label="language.label">
+                        <button type="button" class="language-button" data-language="en" aria-pressed="true">EN</button>
+                        <span aria-hidden="true">|</span>
+                        <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -40,18 +43,18 @@
             <!-- <img src="assets/images/general/Cinematic Cyberpunk Night Workspace.png" alt="" width="1536" height="500"> -->
              <section class="hero">
                 <div class="hero-content">
-                    <h1>Welcome to Malko Labs</h1>
-                    <p>We are a creative digital agency focused on web design, UI/UX, web development, and digital experiences. We combine thoughtful design, modern technology, and performance-focused development to turn ideas into websites and digital products that look great, work smoothly, and make an impact. <br>From responsive websites and custom interfaces to optimization, digital solutions, and emerging technologies, we build experiences designed around people, purpose, and performance.</p>
-                    <p><strong>We design. We develop. We optimize. We build for the future.</strong></p>
+                    <h1 data-i18n="hero.title">Welcome to Malko Labs</h1>
+                    <p data-i18n-html="hero.intro">We are a creative digital agency focused on web design, UI/UX, web development, and digital experiences. We combine thoughtful design, modern technology, and performance-focused development to turn ideas into websites and digital products that look great, work smoothly, and make an impact. <br>From responsive websites and custom interfaces to optimization, digital solutions, and emerging technologies, we build experiences designed around people, purpose, and performance.</p>
+                    <p><strong data-i18n="hero.motto">We design. We develop. We optimize. We build for the future.</strong></p>
                     <div class="cta-buttons">
-                        <a class="cta-button" href="#services">View Our Services</a>
-                        <a class="cta-button" href="#contact">Contact Us</a>
+                        <a class="cta-button" href="#services" data-i18n="hero.servicesCta">View Our Services</a>
+                        <a class="cta-button" href="#contact" data-i18n="hero.contactCta">Get in Touch</a>
                     </div>
                 </div>
             </section>
         <section id="services" class="services">
 
-            <h2>Our Services</h2>
+            <h2 data-i18n="services.title">Our Services</h2>
 
             <div class="service-card">
 
@@ -59,16 +62,16 @@
                 <div class="service-image">
                     <img
                         src="assets/images/services/webdev.png"
-                        alt="Web Development"
+                        alt="Web Development" data-i18n-alt="services.webTitle"
                     >
                 </div>
 
                 <!-- Text on the right -->
                 <div class="service-content">
 
-                    <h2>Web Development & Digital Experiences</h2>
+                    <h2 data-i18n="services.webTitle">Web Development &amp; Digital Experiences</h2>
 
-                    <p>
+                    <p data-i18n="services.webDescription">
                         We turn ambitious ideas into digital experiences that work
                         beautifully. Through thoughtful UI/UX design, front-end
                         development, and WordPress, we build websites around your
@@ -87,15 +90,15 @@
                 <div class="service-image">
                     <img
                         src="assets/images/services/videographer.png"
-                        alt="Videography"
+                        alt="Videography" data-i18n-alt="services.videoTitle"
                     >
                 </div>
 
                 <div class="service-content">
 
-                    <h2>Videography & Motion Design</h2>
+                    <h2 data-i18n="services.videoTitle">Videography &amp; Motion Design</h2>
 
-                    <p>
+                    <p data-i18n="services.videoDescription">
                         We create engaging visual content, motion graphics, and
                         digital media designed to communicate ideas clearly and
                         capture attention.
@@ -108,30 +111,30 @@
 
         <section id="work" class="portfolio-section work-section" aria-labelledby="work-title">
             <div class="section-inner">
-                <h2 id="work-title">Projects</h2>
-                <p>A selection of projects and digital experiences created by Malko Labs.</p>
+                <h2 id="work-title" data-i18n="work.title">Projects</h2>
+                <p data-i18n="work.description">A selection of projects and digital experiences created by Malko Labs.</p>
                 <div class="portfolio-card">
                     <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-                    <h3>Selected work coming soon</h3>
-                    <p>New projects will be added here as they are ready to share.</p>
+                    <h3 data-i18n="work.comingSoon">Selected work coming soon</h3>
+                    <p data-i18n="work.future">New projects will be added here as they are ready to share.</p>
                 </div>
             </div>
         </section>
 
         <section id="about" class="portfolio-section about-section" aria-labelledby="about-title">
             <div class="section-inner">
-                <h2 id="about-title">Meet the Team</h2>
-                <p>Two brothers combining our skills to build thoughtful digital experiences at Malko Labs.</p>
+                <h2 id="about-title" data-i18n="team.title">Meet the Team</h2>
+                <p data-i18n="team.description">Two brothers combining our skills to build thoughtful digital experiences at Malko Labs.</p>
                 <div class="team-container">
                     <article class="team-member">
-                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko" width="250" height="350">
+                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko" data-i18n-alt="team.malkoAlt" width="250" height="350">
                         <h3>Malko</h3>
-                        <p>Web Developer &amp; UI/UX Designer</p>
+                        <p data-i18n="team.malkoRole">Web Developer &amp; UI/UX Designer</p>
                     </article>
                     <article class="team-member">
-                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko's brother" width="150" height="150">
-                        <h3>My Brother</h3>
-                        <p>Role and skills to be added</p>
+                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko's brother" data-i18n-alt="team.brotherAlt" width="150" height="150">
+                        <h3 data-i18n="team.brotherName">My Brother</h3>
+                        <p data-i18n="team.brotherRole">Role and skills to be added</p>
                     </article>
                 </div>
             </div>
@@ -139,30 +142,30 @@
 
         <section id="contact" class="portfolio-section contact-section" aria-labelledby="contact-title">
             <div class="section-inner">
-                <h2 id="contact-title">Contact</h2>
-                <p>Tell us about your project or get in touch on WhatsApp.</p>
+                <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+                <p data-i18n="contact.description">Tell us about your project or get in touch on WhatsApp.</p>
                 <!-- <a class="whatsapp-button" href="#" aria-label="Contact Malko Labs on WhatsApp">
                     <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                     <span>Contact us on WhatsApp</span>
                 </a> -->
                 <form class="contact-form" action="#contact" method="get">
                     <div class="form-field">
-                        <label for="contact-name">Name</label>
-                        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+                    <label for="contact-name" data-i18n="contact.name">Name</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" required aria-label="Name" data-i18n-aria-label="contact.name" placeholder="Name" data-i18n-placeholder="contact.name">
                     </div>
                     <div class="form-field">
-                        <label for="contact-email">Email</label>
-                        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                    <label for="contact-email" data-i18n="contact.email">Email</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" required aria-label="Email" data-i18n-aria-label="contact.email" placeholder="Email" data-i18n-placeholder="contact.email">
                     </div>
                     <div class="form-field">
-                        <label for="contact-message">Message</label>
-                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    <label for="contact-message" data-i18n="contact.message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" required aria-label="Message" data-i18n-aria-label="contact.message" placeholder="Message" data-i18n-placeholder="contact.message"></textarea>
                     </div>
-                    <button class="contact-submit" type="submit">Send message</button>
+                    <button class="contact-submit" type="submit" data-i18n="contact.send">Send</button>
 
-                    <a class="whatsapp-button" href="#" aria-label="Contact Malko Labs on WhatsApp">
+                    <a class="whatsapp-button" href="#" aria-label="Contact Malko Labs on WhatsApp" data-i18n-aria-label="contact.whatsappLabel">
                         <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        <span>Contact us on WhatsApp</span>
+                        <span data-i18n="contact.whatsapp">WhatsApp</span>
                     </a>
                 </form>
             </div>
@@ -171,13 +174,13 @@
 
         <footer class="site-footer">
             <a class="footer-brand" href="index.html">Malko Labs</a>
-            <p>Thoughtful design. Modern technology. Digital experiences built for the future.</p>
+            <p data-i18n="footer.tagline">Thoughtful design. Modern technology. Digital experiences built for the future.</p>
             <div class="footer-content">
                 <div class="footer-location">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     <span>Senegal, Dakar — Yoff</span>
                 </div>
-                <div class="social-links" aria-label="Social media links">
+                <div class="social-links" aria-label="Social media links" data-i18n-aria-label="footer.socialLabel">
                     <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                     <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                     <a href="#" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
