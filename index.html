@@ -61,8 +61,10 @@
                 <!-- Image on the left -->
                 <div class="service-image">
                     <img
-                        src="assets/images/services/webdev.png"
+                        src="assets/images/services/webdev.webp"
                         alt="Web Development" data-i18n-alt="services.webTitle"
+                        loading="lazy"
+                        decoding="async"
                     >
                 </div>
 
@@ -89,8 +91,10 @@
 
                 <div class="service-image">
                     <img
-                        src="assets/images/services/videographer.png"
+                        src="assets/images/services/videographer.webp"
                         alt="Videography" data-i18n-alt="services.videoTitle"
+                        loading="lazy"
+                        decoding="async"
                     >
                 </div>
 
@@ -123,18 +127,18 @@
 
         <section id="about" class="portfolio-section about-section" aria-labelledby="about-title">
             <div class="section-inner">
-                <h2 id="about-title" data-i18n="team.title">Meet the Team</h2>
-                <p data-i18n="team.description">Two brothers combining our skills to build thoughtful digital experiences at Malko Labs.</p>
+                <h2 id="about-title" data-i18n="about.title">Meet the Team</h2>
+                <p data-i18n="about.description">Two brothers combining our skills to build thoughtful digital experiences at Malko Labs.</p>
                 <div class="team-container">
                     <article class="team-member">
-                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko" data-i18n-alt="team.malkoAlt" width="250" height="350">
+                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko" data-i18n-alt="about.malkoAlt" width="250" height="350">
                         <h3>Malko</h3>
-                        <p data-i18n="team.malkoRole">Web Developer &amp; UI/UX Designer</p>
+                        <p data-i18n="about.malkoRole">Web Developer &amp; UI/UX Designer</p>
                     </article>
                     <article class="team-member">
-                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko's brother" data-i18n-alt="team.brotherAlt" width="150" height="150">
-                        <h3 data-i18n="team.brotherName">My Brother</h3>
-                        <p data-i18n="team.brotherRole">Role and skills to be added</p>
+                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko's brother" data-i18n-alt="about.brotherAlt" width="150" height="150">
+                        <h3 data-i18n="about.brotherName">My Brother</h3>
+                        <p data-i18n="about.brotherRole">Role and skills to be added</p>
                     </article>
                 </div>
             </div>
@@ -148,7 +152,7 @@
                     <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                     <span>Contact us on WhatsApp</span>
                 </a> -->
-                <form class="contact-form" action="#contact" method="get">
+                <form class="contact-form" action="#contact" method="get" novalidate>
                     <div class="form-field">
                     <label for="contact-name" data-i18n="contact.name">Name</label>
                         <input id="contact-name" name="name" type="text" autocomplete="name" required aria-label="Name" data-i18n-aria-label="contact.name" placeholder="Name" data-i18n-placeholder="contact.name">
@@ -178,18 +182,18 @@
             <div class="footer-content">
                 <div class="footer-location">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                    <span>Senegal, Dakar — Yoff</span>
+                    <span data-i18n="footer.location">Senegal, Dakar — Yoff</span>
                 </div>
                 <div class="social-links" aria-label="Social media links" data-i18n-aria-label="footer.socialLabel">
-                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61595439171893" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.tiktok.com/@malkolabsagency" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/malkolabsagency/" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <small>&copy; 2026 Malko Labs. All rights reserved.</small>
+            <small data-i18n="footer.copyright">&copy; 2026 Malko Labs. All rights reserved.</small>
         </footer>
         
-        <script src="js/main.js"></script>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>

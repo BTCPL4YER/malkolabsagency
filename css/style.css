@@ -3,6 +3,7 @@
     src: url("../assets/fonts/ubuntu-condensed-font/UbuntuCondensed-Mylx.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -176,7 +177,7 @@ nav {
     outline-offset: 3px;
 }
 .hero-content {
-    background-image: url("../assets/images/general/hero.png");
+    background-image: url("../assets/images/general/hero.webp");
     background-size: cover;
     background-position: center;
 
@@ -600,13 +601,21 @@ nav {
     }
 }
 
-html.js .reveal-on-scroll {
+html.js .reveal {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
-html.js .reveal-on-scroll.is-visible {
+html.js .reveal-left {
+    transform: translateX(-24px);
+}
+
+html.js .reveal-right {
+    transform: translateX(24px);
+}
+
+html.js .reveal.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -700,6 +709,10 @@ html.js .reveal-on-scroll.is-visible {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom));
+    }
+
     .services,
     .portfolio-section {
         scroll-margin-top: 24px;
