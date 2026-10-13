@@ -180,7 +180,7 @@ nav {
     background-image: url("../assets/images/general/hero.webp");
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
     /* color: #211f31; */
     color: #eae7ff;
     width: 100%;
