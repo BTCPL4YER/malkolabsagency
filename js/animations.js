@@ -1,5 +1,5 @@
 export const initAnimations = () => {
-    const revealElements = document.querySelectorAll(".hero-content, .services > h2, .service-card, .portfolio-section h2, .portfolio-card, .team-member, .contact-form, .site-footer");
+    const revealElements = document.querySelectorAll(".hero-content, .services > h2, .service-card, .portfolio-section h2, #work .section-inner > p, .project-card, .about-copy, .contact-card, .why-card, .team-member, .contact-form, .site-footer");
     if (!revealElements.length) return;
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

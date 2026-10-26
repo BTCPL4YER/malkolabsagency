@@ -27,7 +27,7 @@
                         <span data-i18n="nav.services">Services</span></a></li>
                     <li><a href="#work" aria-label="Work" data-i18n-aria-label="nav.work"><i class="fa-solid fa-briefcase" aria-hidden="true"></i>
                         <span data-i18n="nav.work">Work</span></a></li>
-                    <li><a href="#about" aria-label="Team" data-i18n-aria-label="nav.team"><i class="fa-solid fa-info-circle" aria-hidden="true"></i>
+                    <li><a href="#about" aria-label="About" data-i18n-aria-label="nav.team"><i class="fa-solid fa-info-circle" aria-hidden="true"></i>
                         <span data-i18n="nav.team">Team</span></a></li>
                     <li><a href="#contact" aria-label="Contact" data-i18n-aria-label="nav.contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         <span data-i18n="nav.contact">Contact</span></a></li>
@@ -117,61 +117,120 @@
             <div class="section-inner">
                 <h2 id="work-title" data-i18n="work.title">Projects</h2>
                 <p data-i18n="work.description">A selection of projects and digital experiences created by Malko Labs.</p>
-                <div class="portfolio-card">
-                    <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-                    <h3 data-i18n="work.comingSoon">Selected work coming soon</h3>
-                    <p data-i18n="work.future">New projects will be added here as they are ready to share.</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="assets/images/projects/CC.webp" alt="Code Chronicles website preview" data-i18n-alt="work.codeChroniclesAlt" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <h3 data-i18n="work.codeChronicles">Code Chronicles</h3>
+                            <p data-i18n="work.codeChroniclesDescription">An immersive coding adventure that turns programming concepts into quests, puzzles, and challenges for curious learners.</p>
+                            <a class="project-link" href="https://btcpl4yer.github.io/Code_C_webmockup/" data-i18n="work.visitSite" target="_blank">Visit site</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/images/projects/Lifestream.webp" alt="Life Stream Donors website preview" data-i18n-alt="work.lifeStreamAlt" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <h3 data-i18n="work.lifeStream">Life Stream Donors</h3>
+                            <p data-i18n="work.lifeStreamDescription">A community blood donation platform connecting verified donors with patients and hospitals that need help quickly.</p>
+                            <a class="project-link" href="https://btcpl4yer.github.io/LS_Donor/index.html" data-i18n="work.visitSite" target="_blank">Visit site</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/images/projects/Maren.webp" alt="Maren restaurant website preview" data-i18n-alt="work.marenAlt" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <h3 data-i18n="work.maren">Maren</h3>
+                            <p data-i18n="work.marenDescription">A refined restaurant experience celebrating seasonal coastal cuisine, fresh local ingredients, and warm evenings in Dakar.</p>
+                            <a class="project-link" href="https://dine-haven-flow.base44.app/" data-i18n="work.visitSite" target="_blank">Visit site</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/images/projects/SignalDept.webp" alt="SignalDept sound library website preview" data-i18n-alt="work.signalDeptAlt" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <h3 data-i18n="work.signalDept">SignalDept</h3>
+                            <p data-i18n="work.signalDeptDescription">An independent sound library offering thoughtfully curated audio for creators, from atmospheric field recordings to ready-to-use sound collections.</p>
+                            <button class="project-link project-link--unavailable" type="button" disabled data-i18n="work.visitSite" title="Site link not configured" data-i18n-title="work.siteLinkUnavailable">Visit site</button>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="portfolio-section about-section" aria-labelledby="about-title">
-            <div class="section-inner">
-                <h2 id="about-title" data-i18n="about.title">Meet the Team</h2>
-                <p data-i18n="about.description">Two brothers combining our skills to build thoughtful digital experiences at Malko Labs.</p>
-                <div class="team-container">
-                    <article class="team-member">
-                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko" data-i18n-alt="about.malkoAlt" width="250" height="350">
-                        <h3>Malko</h3>
-                        <p data-i18n="about.malkoRole">Web Developer &amp; UI/UX Designer</p>
-                    </article>
-                    <article class="team-member">
-                        <img class="team-photo" src="assets/images/team/profile-placeholder.svg" alt="Portrait placeholder for Malko's brother" data-i18n-alt="about.brotherAlt" width="150" height="150">
-                        <h3 data-i18n="about.brotherName">My Brother</h3>
-                        <p data-i18n="about.brotherRole">Role and skills to be added</p>
-                    </article>
+        <section id="about" class="about-contact-section" aria-label="À propos et contact de Malko Labs" data-i18n-aria-label="about.sectionLabel">
+            <div class="about-contact-grid">
+                <article class="about-copy" aria-labelledby="about-title">
+                    <h2 id="about-title" data-i18n="about.headline">Votre Partenaire Digital pour une Présence Web Performante</h2>
+                    <div class="about-description">
+                        <p data-i18n="about.paragraphOne">Malko Labs helps businesses build modern, professional websites with a focus on performance, accessibility, and responsive design.</p>
+                        <p data-i18n="about.paragraphTwo">Our mission is to help businesses strengthen their digital presence through reliable, fast, and accessible web solutions.</p>
+                        <p data-i18n="about.paragraphThree">Every project is an opportunity to create something exceptional. We combine technical expertise, creativity, and optimization to deliver websites that provide a great user experience.</p>
+                    </div>
+                    <div class="about-stats" aria-label="Malko Labs approach">
+                        <div class="about-stat">
+                            <span class="stat-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></span>
+                            <p class="stat-value"><span data-i18n="about.projectsCount">4</span></p>
+                            <p class="stat-label" data-i18n="about.projectsLabel">Projets Web</p>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></span>
+                            <p class="stat-value stat-value-text" data-i18n="about.responsiveValue">Tous écrans</p>
+                            <p class="stat-label" data-i18n="about.responsiveLabel">Design responsive</p>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span>
+                            <p class="stat-value stat-value-text" data-i18n="about.performanceValue">Rapide &amp; stable</p>
+                            <p class="stat-label" data-i18n="about.performanceLabel">Performance</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="contact-column">
+                    <section id="contact" class="contact-card" aria-labelledby="contact-title">
+                        <h2 id="contact-title" data-i18n="contact.cardTitle">Contactez-nous</h2>
+                        <p class="contact-support-note">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                            <span data-i18n="contact.supportAssistant">Support assistant</span>
+                            <span class="contact-support-hours" data-i18n="contact.supportHours">24/7</span>
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail-row">
+                                <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                                <div><h3 data-i18n="contact.phoneLabel">Téléphone / WhatsApp</h3><p data-i18n="contact.unconfigured">Non renseigné</p></div>
+                            </div>
+                            <div class="contact-detail-row">
+                                <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                                <div><h3 data-i18n="contact.emailLabel">E-mail</h3><p data-i18n="contact.unconfigured">Non renseigné</p></div>
+                            </div>
+                            <div class="contact-detail-row">
+                                <span class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                                <div><h3 data-i18n="contact.locationLabel">Localisation</h3><a href="https://www.google.com/maps/search/?api=1&amp;query=Dakar%20Yoff%20Senegal" target="_blank" rel="noopener noreferrer" data-i18n="contact.locationValue">Dakar — Yoff, Sénégal</a></div>
+                            </div>
+                        </div>
+                        <!-- <form id="contact-form" class="contact-form" action="#contact" method="get" novalidate aria-label="Formulaire de contact" data-i18n-aria-label="contact.formLabel">
+                            <div class="form-field">
+                                <label for="contact-name" data-i18n="contact.name">Name</label>
+                                <input id="contact-name" name="name" type="text" autocomplete="name" required aria-label="Name" data-i18n-aria-label="contact.name" placeholder="Name" data-i18n-placeholder="contact.name">
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-email" data-i18n="contact.email">Email</label>
+                                <input id="contact-email" name="email" type="email" autocomplete="email" required aria-label="Email" data-i18n-aria-label="contact.email" placeholder="Email" data-i18n-placeholder="contact.email">
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-message" data-i18n="contact.message">Message</label>
+                                <textarea id="contact-message" name="message" rows="4" required aria-label="Message" data-i18n-aria-label="contact.message" placeholder="Message" data-i18n-placeholder="contact.message"></textarea>
+                            </div>
+                            <button class="contact-submit" type="submit" data-i18n="contact.send">Send</button>
+                        </form> -->
+                    </section>
+
+                    <aside class="why-card" aria-labelledby="why-title">
+                        <h2 id="why-title" data-i18n="about.whyTitle">Pourquoi choisir Malko Labs ?</h2>
+                        <ul>
+                            <li><span class="why-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span data-i18n="about.reasonOne">Des sites web rapides, modernes et responsives.</span></li>
+                            <li><span class="why-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span data-i18n="about.reasonTwo">Une expérience utilisateur soignée et accessible.</span></li>
+                            <li><span class="why-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span data-i18n="about.reasonThree">Des performances optimisées et un code maintenable.</span></li>
+                            <li><span class="why-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span data-i18n="about.reasonFour">Un accompagnement transparent et des solutions adaptées à vos besoins.</span></li>
+                        </ul>
+                    </aside>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact" class="portfolio-section contact-section" aria-labelledby="contact-title">
-            <div class="section-inner">
-                <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
-                <p data-i18n="contact.description">Tell us about your project or get in touch on WhatsApp.</p>
-                <!-- <a class="whatsapp-button" href="#" aria-label="Contact Malko Labs on WhatsApp">
-                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                    <span>Contact us on WhatsApp</span>
-                </a> -->
-                <form class="contact-form" action="#contact" method="get" novalidate>
-                    <div class="form-field">
-                    <label for="contact-name" data-i18n="contact.name">Name</label>
-                        <input id="contact-name" name="name" type="text" autocomplete="name" required aria-label="Name" data-i18n-aria-label="contact.name" placeholder="Name" data-i18n-placeholder="contact.name">
-                    </div>
-                    <div class="form-field">
-                    <label for="contact-email" data-i18n="contact.email">Email</label>
-                        <input id="contact-email" name="email" type="email" autocomplete="email" required aria-label="Email" data-i18n-aria-label="contact.email" placeholder="Email" data-i18n-placeholder="contact.email">
-                    </div>
-                    <div class="form-field">
-                    <label for="contact-message" data-i18n="contact.message">Message</label>
-                        <textarea id="contact-message" name="message" rows="5" required aria-label="Message" data-i18n-aria-label="contact.message" placeholder="Message" data-i18n-placeholder="contact.message"></textarea>
-                    </div>
-                    <button class="contact-submit" type="submit" data-i18n="contact.send">Send</button>
-
-                    <a class="whatsapp-button" href="#" aria-label="Contact Malko Labs on WhatsApp" data-i18n-aria-label="contact.whatsappLabel">
-                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        <span data-i18n="contact.whatsapp">WhatsApp</span>
-                    </a>
-                </form>
             </div>
         </section>
         </div>
@@ -185,7 +244,6 @@
                     <span data-i18n="footer.location">Senegal, Dakar — Yoff</span>
                 </div>
                 <div class="social-links" aria-label="Social media links" data-i18n-aria-label="footer.socialLabel">
-                    <a href="#" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61595439171893" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                     <a href="https://www.tiktok.com/@malkolabsagency" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/malkolabsagency/" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -193,6 +251,7 @@
             </div>
             <small data-i18n="footer.copyright">&copy; 2026 Malko Labs. All rights reserved.</small>
         </footer>
+
         
         <script type="module" src="js/main.js"></script>
     </body>
