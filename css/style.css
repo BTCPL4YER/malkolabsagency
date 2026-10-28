@@ -33,6 +33,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     color: var(--soft-lilac);
     padding: 20px;
